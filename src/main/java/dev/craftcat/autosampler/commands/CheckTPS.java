@@ -20,12 +20,12 @@ public class CheckTPS implements CommandExecutor {
 
         double tps = Sponge.getServer().getTicksPerSecond();
 
-        String serverName = args.<String>getOne("name").get();
+        String serverName = args.<String>getOne("server").get();
 
         WebhookClientBuilder builder = new WebhookClientBuilder("https://discord.com/api/webhooks/731478994347622430/sWyBTPaKQ8OsCEnoQp6kPF4lql7_wldtk3z2EQQ5EmcM-83YbCWpHKxf_4wvvcTBt3yK"); // or id, token
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);
-            thread.setName("Hello");
+            thread.setName("NPS upload");
             thread.setDaemon(true);
             return thread;
         });
