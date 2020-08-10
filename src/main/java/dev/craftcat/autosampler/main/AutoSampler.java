@@ -61,7 +61,7 @@ public class AutoSampler {
             .description(Text.of("Server command to automatically check tps"))
             .permission("autosampler.sample")
             .arguments(
-                GenericArguments.remainingJoinedStrings(Text.of("server"))
+                GenericArguments.string(Text.of("server"))
             )
             .executor(new CheckTPS())
             .build();
