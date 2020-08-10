@@ -1,6 +1,8 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 # User-specific stuff
 .idea/
+.thea
+.settings
 
 *.iml
 *.ipr
@@ -103,7 +105,7 @@ $RECYCLE.BIN/
 
 .gradle
 build/
-=======
+#=======
 .gradle
 /build/
 
