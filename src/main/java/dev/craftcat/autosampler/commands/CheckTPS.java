@@ -38,7 +38,7 @@ public class CheckTPS implements CommandExecutor {
             Sponge.getCommandManager().process(Sponge.getServer().getConsole(), "say LAG HAS BEEN DETECTED... FIXING!");
         }
 
-        while (tps < 5.0) {
+        while (tps == 20) {
 
             switch (whatToDo) {
                 case 'i':
